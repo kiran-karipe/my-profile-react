@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Jumbotron, Button, Collapse } from 'react-bootstrap';
-import './Projects.css';
 class Projects extends Component {
   constructor() {
     super();
