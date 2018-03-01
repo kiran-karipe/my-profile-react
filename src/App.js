@@ -1,18 +1,42 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Welcome from './components/Welcome';
+import NavBar, {
+  HOME,
+  ABOUT,
+  PROJECTS,
+  SKILLS
+} from './components/NavBar';
+import About from './components/About';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Footer from './components/Footer';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedNavItem: HOME,
+    };
+    this.handleClickNavItem = this.handleClickNavItem.bind(this);
+  }
+
+  handleClickNavItem = (item) => {
+    this.setState({
+      selectedNavItem: item
+    })
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <NavBar selected={ this.state.selectedNavItem }
+          onClickNavItem={ this.handleClickNavItem } />
+        { this.state.selectedNavItem === HOME     && <Welcome /> }
+        { this.state.selectedNavItem === ABOUT    && <About /> }
+        { this.state.selectedNavItem === PROJECTS && <Projects /> }
+        { this.state.selectedNavItem === SKILLS   && <Skills /> }
+        <Footer />
       </div>
     );
   }
