@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {Navbar, NavItem, Nav} from 'react-bootstrap';
+import { Navbar, NavItem, Nav } from 'react-bootstrap';
+import './NavBar.css';
 const HOME = 'HOME';
 const ABOUT = 'ABOUT';
 const PROJECTS = 'PROJECTS';
@@ -8,8 +9,8 @@ const SKILLS = 'SKILLS';
 class NavBar extends Component {
   render() {
     return (
-      <Navbar inverse collapseOnSelect>
-        <Nav
+      <Navbar inverse collapseOnSelect >
+        <Nav className="TopNav"
           bsStyle="tabs"
           justified
           activeKey={ this.props.selected }

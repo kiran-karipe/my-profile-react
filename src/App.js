@@ -19,6 +19,7 @@ class App extends Component {
       selectedNavItem: HOME,
     };
     this.handleClickNavItem = this.handleClickNavItem.bind(this);
+    this.handleClickFooterHome = this.handleClickFooterHome.bind(this);
   }
 
   handleClickNavItem = (item) => {
@@ -26,6 +27,13 @@ class App extends Component {
       selectedNavItem: item
     })
   }
+
+  handleClickFooterHome = () => {
+    this.setState({
+      selectedNavItem: HOME
+    })
+  }
+
 
   render() {
     return (
@@ -36,7 +44,8 @@ class App extends Component {
         { this.state.selectedNavItem === ABOUT    && <About /> }
         { this.state.selectedNavItem === PROJECTS && <Projects /> }
         { this.state.selectedNavItem === SKILLS   && <Skills /> }
-        <Footer />
+        <Footer
+        onClickFooterItem={ this.handleClickFooterHome }/>
       </div>
     );
   }

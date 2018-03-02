@@ -1,14 +1,31 @@
 import React, { Component } from 'react';
 import './Footer.css';
+import { Button, Glyphicon, ButtonGroup } from 'react-bootstrap';
+const HOME = 'HOME';
 
 class Footer extends Component {
   render() {
     return (
-      <footer id="footer">
-        <h4>
-          Made by <a className="raised-link me" href="https://github.com/kiran-karipe">Sai Kiran Karipe</a>
-        </h4>
-      </footer>
+      <div className="banner-text-footer">
+        <hr/>
+        <ul className="social">
+        <ButtonGroup>
+          <Button bsSize="large" onClick={() => this.props.onClickFooterItem(HOME)}>
+            <Glyphicon glyph="home" />
+          </Button>
+        </ButtonGroup>
+        <ButtonGroup >
+          <Button bsSize="large" href="https://github.com/kiran-karipe">
+            <Glyphicon glyph="home"/>
+          </Button>
+        </ButtonGroup>
+        <ButtonGroup >
+          <Button bsSize="large" href="https://www.linkedin.com/in/sai-kiran-karipe/">
+            <Glyphicon glyph="globe" />
+          </Button>
+        </ButtonGroup>
+        </ul>
+      </div>
     )
   }
 }

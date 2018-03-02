@@ -1,17 +1,8 @@
-.banner {
-    display: run-in;
-    vertical-align: middle;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    width: 85%;
-    padding-bottom: 30px;
+.HeadLine {
+    font-size: 90px;
 }
 
 .banner-text h1 {
-  font: 90px/1.1em 'opensans-bold', sans-serif;
   font-style: normal;
   font-variant-ligatures: normal;
   font-variant-caps: normal;
@@ -56,7 +47,7 @@
     color: #fff;
 }
 
-.banner-text-footer hr {
+.banner-text hr {
     width: 60%;
     margin: 18px auto 24px auto;
     margin-top: 18px;
@@ -87,18 +78,4 @@
     padding-left: 0px;
     font-size: 30px;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
-}
-
-.social li a {
-    color: #fff;
-}
-
-.gi {
-    display: inline-block;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
