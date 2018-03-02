@@ -25,6 +25,10 @@ class Footer extends Component {
           </Button>
         </ButtonGroup>
         </ul>
+        <p className="copyright">
+          <Glyphicon glyph="copyright-mark" />
+           <span> </span>Copyright2018
+        </p>
       </div>
     )
   }
