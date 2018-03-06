@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Footer.css';
+import './CSS/Footer.css';
 import { Button, Glyphicon, ButtonGroup } from 'react-bootstrap';
 const HOME = 'HOME';
 

@@ -1,0 +1,85 @@
+.About h2 {
+  font: 60px/1.1em 'opensans-bold', sans-serif;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.1em;
+  font-family: opensans-bold, sans-serif;
+  color: #fff;
+  letter-spacing: -2px;
+  margin: 0 auto 18px auto;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 18px;
+  margin-left: auto;
+}
+
+.About p {
+  font: 30px 'librebaskerville-regular', serif;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 25px;
+    line-height: 1.9em;
+    font-family: librebaskerville-regular, serif;
+    color: #A8A8A8;
+      margin: 0 auto;
+      margin-top: 0px;
+      margin-right: auto;
+      margin-bottom: 0px;
+      margin-left: auto;
+    width: 70%;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.About h3 {
+  font: 30px 'librebaskerville-regular', serif;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 30px;
+    line-height: 1.9em;
+    font-family: librebaskerville-regular, serif;
+    color: #fff;
+      margin: 0 auto;
+      margin-top: 0px;
+      margin-right: auto;
+      margin-bottom: 0px;
+      margin-left: auto;
+    width: 70%;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.About ul {
+  font: 30px 'librebaskerville-regular', serif;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 25px;
+    line-height: 1.9em;
+    font-family: librebaskerville-regular, serif;
+    color: #A8A8A8;
+      margin: 0 auto;
+      margin-top: 0px;
+      margin-right: auto;
+      margin-bottom: 0px;
+      margin-left: auto;
+    width: 70%;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}

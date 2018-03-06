@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
-import { Jumbotron } from 'react-bootstrap';
+import './CSS/Skills.css';
 
 class Skills extends Component {
   render() {
     return (
-      <div>
-        <Jumbotron>
-          <h1>My Skills</h1>
+      <div className="Skills">
+        <div>
+          <h2>Technical Expertise</h2>
           <p>
-            This is a simple hero unit, a simple jumbotron-style component for calling
-            extra attention to featured content or information.
+            <span>Languages: </span>
+            Java, JavaScript, Python
           </p>
-        </Jumbotron>
+          <p>
+            <span>Technologies: </span>
+            Node.js, React/Redux, Express, MySQL, MongoDB, HTML, CSS
+          </p>
+        </div>
       </div>
     )
   }

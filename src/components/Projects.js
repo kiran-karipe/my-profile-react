@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Jumbotron, Button, Collapse } from 'react-bootstrap';
+import { Button, Collapse } from 'react-bootstrap';
+import './CSS/Projects.css';
+
 class Projects extends Component {
   constructor() {
     super();
@@ -24,8 +26,8 @@ class Projects extends Component {
       buttonNameThirdProject = "See Less";
     }
     return(
-      <div>
-        <Jumbotron className="Projects">
+      <div className="Projects">
+        <div>
           <h2>ZenSurvey using Node & React</h2>
           <p>
             Built and deployed feedback-collection web application with NodeJS, React, Redux, Express, and MongoDB.
@@ -42,8 +44,8 @@ class Projects extends Component {
               <p>Communicating data from Mongo database to the React application.</p>
             </div>
           </Collapse>
-        </Jumbotron>
-        <Jumbotron>
+        </div>
+        <div>
           <h2>Integration of Google Actions Using DialogFlow</h2>
           <p>
             Integrated various Google actions using DialogFlow which allowed the users to
@@ -58,8 +60,8 @@ class Projects extends Component {
               <p>Created a backend service on Node.js that interacts with UPS tracking APIs to retrieve the package tracking details for the voice assistant.</p>
             </div>
           </Collapse>
-        </Jumbotron>
-        <Jumbotron>
+        </div>
+        <div>
           <h2>Database Schema Design for a Reservation Systems</h2>
           <p>
             Presented a relational database design for a simple Railway Reservation Management Systems
@@ -75,7 +77,7 @@ class Projects extends Component {
               <p>Optimized query performance by identifying the common functional SQL statements, normalizing/de-normalizing and adding appropriate indexes and views.</p>
             </div>
           </Collapse>
-        </Jumbotron>
+        </div>
       </div>
     )
   }

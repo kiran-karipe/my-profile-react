@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, NavItem, Nav } from 'react-bootstrap';
-import './NavBar.css';
+import './CSS/NavBar.css';
 const HOME = 'HOME';
 const ABOUT = 'ABOUT';
 const PROJECTS = 'PROJECTS';
@@ -21,13 +21,13 @@ class NavBar extends Component {
           <NavItem eventKey={ABOUT}>
             About Me
           </NavItem>
-          <NavItem eventKey={PROJECTS}>
-            Projects
-          </NavItem>
           <NavItem
             eventKey={SKILLS}
             >
             Skills
+          </NavItem>
+          <NavItem eventKey={PROJECTS}>
+            Projects
           </NavItem>
         </Nav>
       </Navbar>
